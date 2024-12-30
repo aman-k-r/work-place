@@ -1,0 +1,172 @@
+.home{
+  height: 100vh;
+  background-image: url("src/assets/hero1.png");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+
+}
+.scrolled {
+  background-color: #050816; /* Adjust as needed */
+  transition: background-color 0.3s ease;
+}
+.name {
+  font: 900 5.5rem "Poppins";
+  color: #edf2f4;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.name span {
+  color: #9658f8;
+}
+
+.typewriterpara {
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #edf2f4;
+  font-family: "courier prime";
+} 
+/* First button styles */
+button.firstbtn {
+  width: 10rem;
+  position: relative;
+  height: 2.5rem;
+  border: 3px ridge #7f4be1;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  font-size: 16px;
+  cursor: pointer;
+}
+.firstbtn a {
+  text-decoration: none;
+  color: #edf2f4;
+}
+
+button.firstbtn::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #050816;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button.firstbtn::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #050816;
+  transition: 0.5s;
+}
+
+button.firstbtn:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+button.firstbtn:hover {
+  box-shadow: inset 0px 0px 25px #9658f8;
+}
+
+/* Second Button Styles */
+
+.button-icon {
+  display: flex;
+  border: 3px #edf2f4 solid;
+  width: 15rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.icon {
+  background-color: #edf2f4;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 15rem;
+  height: 2.5rem;
+}
+
+.button-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 2.2rem;
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.top {
+  background: #050816;
+  color: #edf2f4;
+  transform: rotateX(-90deg) translate3d(0, -2.3px, 1.5rem);
+}
+
+.front {
+  background: #050816;
+  color: #edf2f4;
+  transform: translate3d(0, 0, 1em);
+}
+ /* Loader at the bottom */
+ .loader {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: default;
+  display: block;
+}
+.loader.hide {
+  display: none;
+}
+.loader > * {
+  color: #edf2f4;
+}
+.loader span {
+  display: inline-flex;
+}
+.loader span:nth-child(2) {
+  letter-spacing: -1em;
+  overflow: hidden;
+  animation: reveal 2000ms cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+    alternate;
+}
+@keyframes reveal {
+  0%,
+  100% {
+    opacity: 0.5;
+    letter-spacing: -1em;
+  }
+  50% {
+    opacity: 1;
+    letter-spacing: 0em;
+  }
+}
+@media (max-width: 750px) {
+  .typewriterpara{
+    display: none;
+  }
+} 
+

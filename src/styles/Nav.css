@@ -1,0 +1,80 @@
+nav {
+  height: 9vh;
+  z-index: 1000;
+}
+.navbar img {
+  max-width: 100%; /* Ensures the image never exceeds the navbar's width */
+  height: auto; /* Maintains the aspect ratio */
+  max-height: 50px; /* Adjust this value as per your navbar height */
+}
+
+nav.navbar ul.navbar-nav li a {
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #edf2f4;
+}
+
+.resume-btn {
+  background-color: #9658f8;
+  border: 3px solid transparent;
+  transition: 0.2s;
+  width: 125px;
+  border-radius: 0;
+}
+
+.resume-btn:hover {
+  background-color: transparent;
+  border: 3px solid #6019bd;
+  box-shadow: 0px 0px 27px 5px #6019bd;
+}
+
+.resume-cont {
+  color: #fff;
+  font-family: "Poppins", Courier, monospace;
+  overflow: hidden;
+  border-right: 4px solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.resume-btn:hover .resume-cont {
+  border-right: 4px solid #6019bd;
+  animation: letters 1s steps(22, end), cursor 0.4s step-end infinite;
+}
+
+@keyframes letters {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #6019bd;
+  }
+}
+
+.resumeAnchor {
+  text-decoration: none;
+}
+
+.navbar-icon{
+  font-size: 3rem;
+  color: #edf2f4;
+}
+
+/* Upper margin to the Resume button when navbar is collapsed */
+@media (max-width: 992px) {
+  .resume-btn {
+    margin-top: 25px;
+  }
+}

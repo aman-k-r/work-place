@@ -1,0 +1,57 @@
+#about {
+  padding-top: 9vh;
+}
+#about p {
+  text-align: justify;
+  color: #f1faee;
+  line-height: 1.8;
+}
+.resume-about {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  color: #edf2f4;
+  background: #9658f8;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #7f4be1;
+  transition: 0.5s ease;
+  border-radius: 0;
+  letter-spacing: 2px;
+}
+
+.resume-about:hover,
+.resume-about:focus {
+  color: #edf2f4;
+  background: #9658f8;
+  border: 1px solid #9658f8;
+  box-shadow: 0 0 5px #9658f8, 0 0 20px #9658f8, 0 0 50px #9658f8,
+    0 0 100px #9658f8;
+}
+.links-heading {
+  font-size: 32px;
+  color: #edf2f4;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.icons-container a svg {
+  font-size: 50px;
+  color: #edf2f4;
+  border: 1px solid #7f4be1;
+  padding: 10px;
+  transition: all 0.3s ease;
+  margin: 25px;
+}
+
+.icons-container a svg:hover {
+  background-color: #7c44e0;
+  transform: rotate(360deg); 
+}
+
+@media (max-width: 750px) {
+  .icons-container a svg {
+    margin: 8px;
+  }
+}

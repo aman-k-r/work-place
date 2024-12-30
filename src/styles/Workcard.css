@@ -1,0 +1,57 @@
+.card-container {
+  background: #1d1836;
+  border: 1px solid #9658f8;
+  overflow: hidden;
+  margin: 10% 5%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+
+}
+.card-container:hover {
+  transform: scale(1.02); /* Grows 5% bigger on hover */
+}
+.carousel {
+  height: 180px;
+  z-index: 2;
+}
+.heading h3{
+  color: #edf2f4;
+  margin: 0;
+  padding: 8px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "ubuntu";
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0%;
+}
+
+.para {
+  height: 180px;
+  overflow-y: hidden;
+  padding-top: 10px;
+}
+
+.para p {
+  padding: 15px;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  color: #f1faee;
+  
+} 
+
+.icons-container svg {
+  border: 1px solid black; 
+  /* border-radius: 4px; */
+  cursor: pointer;
+  margin: 20px auto;
+  padding: 5px 30px;
+  text-decoration: none;
+  text-align: center;
+}
