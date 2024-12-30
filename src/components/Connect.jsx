@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import vg from "../assets/contact.svg";
+import vg from "../../public/assets/contact.svg";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import { addDoc, collection } from "firebase/firestore";
