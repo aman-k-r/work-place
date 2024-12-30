@@ -20,12 +20,12 @@ let workData = [
   },
 {
     title : "Portfolio",
-    image1 : "public/projectImages/P1.png",
-    image2 : "public/projectImages/P2.png",
-    image3 : "public/projectImages/P3.png",
+    image1 : "./projectImages/P1.png",
+    image2 : "./projectImages/P2.png",
+    image3 : "./projectImages/P3.png",
     description : "Built a personal portfolio website using ReactJS and React Router, showcasing projects, skills, and experience. The site features a modern design with an interactive navigation bar, dynamic animations, and a responsive layout optimized for all devices. Integrated sections for “About Me,” “Education,” “Skills,” “Projects,” and “Contact,” with smooth transitions and gradient aesthetics.",
-    previewLink: "https://codify-it.vercel.app/",
-    sourceCodeLink: "https://github.com/aman-k-r/CodifyIt"
+    previewLink: "https://akode.vercel.app/",
+    sourceCodeLink: "https://github.com/aman-k-r/work-place"
   },
   {
     title : "LockGenie",
